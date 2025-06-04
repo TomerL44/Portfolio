@@ -1,0 +1,87 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #1e40af; 
+  color: #dbeafe; 
+  padding: 0.4rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  cursor: default;
+}
+
+.badge:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+button,
+a {
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+button:hover,
+a:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.skill-box {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transform: scale(1);
+  border: 1px solid gray;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background-color: transparent;
+}
+
+.skill-box:hover {
+  transform: scale(1.08) translateY(-5px);
+  filter: brightness(1.1);
+  box-shadow: 0 0 25px rgba(96, 165, 250, 0.6);
+  border-color: #3b82f6;
+}
+
+/* New Classes */
+.link-hover {
+  color: #93c5fd; /* text-blue-300 */
+  transition: all 0.3s ease;
+}
+
+.link-hover:hover {
+  color: #fff; /* text-white */
+}
+
+.button-blue {
+  border: 1px solid #3b82f6; /* border-blue-500 */
+  color: #60a5fa; /* text-blue-400 */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.button-blue:hover {
+  background-color: #2563eb; /* hover:bg-blue-600 */
+  color: white;
+}
+
+.glow-hover {
+  transition: all 0.4s ease;
+  border: 1px solid #3b82f6;
+  box-shadow: 0 0 0 transparent;
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.9); /* glow blue */
+  border-color: #60a5fa;
+}
