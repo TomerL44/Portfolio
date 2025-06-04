@@ -27,10 +27,8 @@ function scrollToTop() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // הצגת alert אם ההודעה נשלחה
   if (window.location.search.includes('success=true')) {
     alert('Your details have been sent, thank you!');
-    // הסרת ?success=true מה-URL
     window.history.replaceState({}, document.title, window.location.pathname);
   }
 });
