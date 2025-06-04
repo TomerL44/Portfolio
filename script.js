@@ -1,62 +1,36 @@
 AOS.init({
-    duration: 1200,
-    delay: 100,
-    offset: 200,
-    easing: 'ease-out-cubic',
-    once: true
-  });
-  
-  function scrollToSection(id) {
-    const section = document.getElementById(id);
-    if (section) {
-      section.querySelectorAll('[data-aos]').forEach((el) => {
-        el.classList.remove('aos-animate');
-        void el.offsetWidth;
-      });
-  
-      section.scrollIntoView({ behavior: 'smooth' });
-  
-      setTimeout(() => {
-        AOS.refresh();
-      }, 600);
-    }
-  }
-  
-  function scrollToTop() {
-    scrollToSection('home');
-  }
+  duration: 1200,
+  delay: 100,
+  offset: 200,
+  easing: 'ease-out-cubic',
+  once: true
+});
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('contactForm');
-    if (form) {
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-  
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
-  
-        try {
-          const res = await fetch('/contact', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-          });
-  
-          if (res.ok) {
-            alert('Your details have been sent, Thank you!');
-            form.reset(); 
-          } else {
-            alert('Error try again please');
-          }
-        } catch (err) {
-          console.error(err);
-          alert('error, verify server');
-        }
-      });
-    }
-  });
-  
-  
-  
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (section) {
+    section.querySelectorAll('[data-aos]').forEach((el) => {
+      el.classList.remove('aos-animate');
+      void el.offsetWidth;
+    });
+
+    section.scrollIntoView({ behavior: 'smooth' });
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 600);
+  }
+}
+
+function scrollToTop() {
+  scrollToSection('home');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // הצגת alert אם ההודעה נשלחה
+  if (window.location.search.includes('success=true')) {
+    alert('Your details have been sent, thank you!');
+    // הסרת ?success=true מה-URL
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+});
