@@ -9,15 +9,13 @@ AOS.init({
   function scrollToSection(id) {
     const section = document.getElementById(id);
     if (section) {
-      // הפעלת האנימציה מחדש
       section.querySelectorAll('[data-aos]').forEach((el) => {
         el.classList.remove('aos-animate');
-        void el.offsetWidth; // טריק לכפות רה-רנדר
+        void el.offsetWidth;
       });
   
       section.scrollIntoView({ behavior: 'smooth' });
   
-      // הוספת האנימציה שוב לאחר העיכוב
       setTimeout(() => {
         AOS.refresh();
       }, 600);
@@ -48,7 +46,7 @@ AOS.init({
   
           if (res.ok) {
             alert('Your details have been sent, Thank you!');
-            form.reset(); // איפוס השדות
+            form.reset(); 
           } else {
             alert('Error try again please');
           }
