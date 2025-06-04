@@ -119,12 +119,17 @@
   <section id="contact" class="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-black py-16 px-6 text-center">
     <div class="w-full max-w-xl">
       <h2 class="text-3xl text-blue-400 font-semibold mb-8" data-aos="fade-right">Get in touch</h2>
-      <form id="contactForm" class="space-y-4" data-aos="fade-right" data-aos-delay="100" method="POST" action="/contact">
-        <input type="text" name="name" placeholder="Your name" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required />
-        <input type="email" name="email" placeholder="example@gmail.com" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required />
-        <textarea name="message" rows="4" placeholder="Your Message here" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required></textarea>
-        <button type="submit" class="button-blue">Submit Message</button>
-      </form>
+    <form action="https://formsubmit.co/tomerlevy0404@gmail.com" method="POST" class="space-y-4" data-aos="fade-right" data-aos-delay="100">
+      <input type="text" name="name" placeholder="Your name" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required />
+      <input type="email" name="email" placeholder="example@gmail.com" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required />
+      <textarea name="message" rows="4" placeholder="Your Message here" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required></textarea>
+      
+      <!-- אפשרויות נוספות ל־Formsubmit -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://tomerl44.github.io/Portfolio/?success=true">
+    
+      <button type="submit" class="button-blue">Submit Message</button>
+    </form>
     </div>
   </section>
 </main>
