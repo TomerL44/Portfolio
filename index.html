@@ -1,148 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tomer Levy | Portfolio</title>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Tomer Levy | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-black text-white font-sans flex flex-col min-h-screen">
 
-<!-- Header -->
-<header class="sticky top-0 z-50 backdrop-blur bg-black/70 w-full bg-gradient-to-r from-black via-gray-900 to-black py-6 px-10 flex flex-col md:flex-row justify-between items-center text-white border-b border-gray-800">
-  <div class="text-left" data-aos="fade-right">
-    <h1 class="text-4xl sm:text-5xl font-bold text-blue-400 cursor-pointer hover:scale-105 transition-transform duration-300" onclick="scrollToTop()">Tomer Levy</h1>
-  </div>
-  <nav class="mt-6 md:mt-0 flex gap-6 flex-wrap text-lg" data-aos="fade-left">
-    <a href="#" onclick="scrollToTop()" class="link-hover">Home</a>
-    <a href="#about" class="link-hover">About</a>
-    <a href="#footer" class="link-hover">Contact</a>
-  </nav>
-</header>
-
-<main class="flex-grow">
-  <!-- Hero -->
-  <section id="home" class="min-h-screen flex items-center justify-center text-center py-20 px-6 bg-gradient-to-b from-black to-gray-900">
-    <div>
-      <h1 class="text-5xl font-bold text-blue-400" data-aos="fade-right">Hi, I’m Tomer Levy</h1>
-      <p class="mt-6 text-lg max-w-2xl mx-auto text-gray-300" data-aos="fade-right" data-aos-delay="200">
-        I’m a second-year Software Engineering student passionate about problem-solving, teamwork, and constant improvement.
-        I enjoy exploring both the technical and creative sides of software development — from writing code to bringing ideas to life.
-        I’m currently looking for my first student position in software development, full-stack, or any related field.
-      </p>
-      <img src="assets/Screenshot 2025-02-23 1045324534.png" alt="Tomer Profile" class="mt-8 w-40 h-40 rounded-full mx-auto object-cover border-4 border-blue-500" data-aos="zoom-in" data-aos-delay="300" />   
-      <div class="mt-6 flex justify-center gap-4 flex-wrap" data-aos="zoom-in" data-aos-delay="500">
-        <a href="assets/Tomer Levy CV.pdf" target="_blank" rel="noopener noreferrer" class="button-blue">📄 My Resume</a>
-        <a href="#footer" class="button-blue">📬 Contact me!</a>        
-      </div>   
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-black/70 w-full bg-gradient-to-r from-black via-gray-900 to-black py-6 px-10 flex flex-col md:flex-row justify-between items-center text-white border-b border-gray-800">
+    <div class="text-left" data-aos="fade-right">
+      <h1 class="text-4xl sm:text-5xl font-bold text-blue-400 cursor-pointer hover:scale-105 transition-transform duration-300" onclick="scrollToTop()">Tomer Levy</h1>
     </div>
-  </section>
+    <nav class="mt-6 md:mt-0 flex gap-6 flex-wrap text-lg" data-aos="fade-left">
+      <a href="#" onclick="scrollToTop()" class="link-hover">Home</a>
+      <a href="#about" class="link-hover">About</a>
+      <a href="#contact" class="link-hover">Contact</a>
+    </nav>
+  </header>
 
-  <!-- About -->
-  <section id="about" class="min-h-screen flex items-center justify-center bg-black py-16 px-6">
-    <div class="max-w-6xl w-full border border-gray-800 rounded-2xl p-8" data-aos="fade-right">
-      <h2 class="text-4xl text-center text-blue-400 font-bold mb-12" data-aos="fade-right">Just a bit more:</h2>
-      <p class="text-center text-xl text-gray-300 mb-12" data-aos="fade-right" data-aos-delay="100">Discipline Fuels Innovation — that’s my motto.</p>
-      <div class="grid md:grid-cols-2 gap-10">
-        <!-- Skills -->
-        <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-gray-800 rounded-xl p-6 glow-hover">
-          <h3 class="text-white font-semibold text-lg mb-2">Frontend:</h3>
-          <p class="flex flex-wrap gap-2">
-            <span class="badge bg-blue-900">JavaScript</span>
-            <span class="badge bg-blue-900">CSS</span>
-            <span class="badge bg-blue-900">HTML</span>
-          </p>
-          <h3 class="text-white font-semibold text-lg mt-6 mb-2">Backend:</h3>
-          <p class="flex flex-wrap gap-2">
-            <span class="badge bg-blue-900">Python</span>
-            <span class="badge bg-blue-900">C</span>
-          </p>
-          <h3 class="text-white font-semibold text-lg mt-6 mb-2">Other Tech:</h3>
-          <p class="flex flex-wrap gap-2">
-            <span class="badge bg-blue-900">VS Code</span>
-            <span class="badge bg-blue-900">Linux Terminal</span>
-          </p>
-        </div>
-
-        <!-- Courses -->
-        <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-gray-800 rounded-xl p-6 glow-hover">
-          <h3 class="text-white font-semibold text-lg mb-2">Completed Courses:</h3>
-          <p class="flex flex-wrap gap-2 mb-6">
-            <span class="badge bg-blue-900">Data Structures</span>
-            <span class="badge bg-blue-900">OOP</span>
-            <span class="badge bg-blue-900">Operating Systems</span>
-          </p>
-          <h3 class="text-white font-semibold text-lg mt-6 mb-2">Languages:</h3>
-          <p class="flex flex-wrap gap-2">
-            <span class="badge bg-blue-900">English (Fluent)</span>
-            <span class="badge bg-blue-900">Hebrew (Native)</span>
-          </p>
-        </div>
-
-    <!-- Education -->
-    <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-gray-800 rounded-xl p-6 glow-hover">
-      <h3 class="text-white font-semibold text-lg mb-2">🎓 Education:</h3>
-      <ul class="list-disc list-inside text-gray-300 text-base leading-relaxed space-y-3">
-        <li>
-          <strong>Braude Academic College</strong> – B.Sc. Software Engineering (2023–2027)<br>
-          <span class="pl-4 block">Experience in Python, C, JavaScript, HTML, CSS, Java</span>
-        </li>
-        <li>
-          <strong>Ort Nahariya High School</strong> – Computers and Electronics (2015–2018)<br>
-          <span class="pl-4 block">Practical experience with hardware/software systems & circuit design</span>
-        </li>
-      </ul>
-    </div>
-
-
-      <!-- Experience -->
-      <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-gray-800 rounded-xl p-6 glow-hover">
-        <h3 class="text-white font-semibold text-lg mb-2">📂 Experience:</h3>
-        <div class="text-gray-300 text-base leading-relaxed space-y-2">
-          <p>
-            <strong>Computer Network Manager, IDF C4I Corps (2018–2021)</strong>
-          </p>
-          <p>
-            Led a team managing military computer and network systems.
-          </p>
-          <p>
-            Completed army courses in Python, strengthening programming and automation capabilities.
-          </p>
+  <main class="flex-grow">
+    <!-- Hero -->
+    <section id="home" class="min-h-screen flex items-center justify-center text-center py-20 px-6 bg-gradient-to-b from-black to-gray-900">
+      <div>
+        <h1 class="text-5xl font-bold text-blue-400" data-aos="fade-right">Hi, I’m Tomer Levy</h1>
+        <p class="mt-6 text-lg max-w-2xl mx-auto text-gray-300" data-aos="fade-right" data-aos-delay="200">
+          I’m a second-year Software Engineering student passionate about problem-solving, teamwork, and constant improvement.
+          I enjoy exploring both the technical and creative sides of software development — from writing code to bringing ideas to life.
+          I’m currently looking for my first student position in software development, full-stack, or any related field.
+        </p>
+        <img src="assets/Screenshot 2025-02-23 1045324534.png" alt="Tomer Profile" class="mt-8 w-40 h-40 rounded-full mx-auto object-cover border-4 border-blue-500" data-aos="zoom-in" data-aos-delay="300" />
+        <div class="mt-6 flex justify-center gap-4 flex-wrap" data-aos="zoom-in" data-aos-delay="500">
+          <a href="assets/Tomer Levy CV.pdf" target="_blank" rel="noopener noreferrer" class="button-blue">📄 My Resume</a>
+          <a href="#contact" class="button-blue">📬 Contact me!</a>
         </div>
       </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-black py-16 px-6 text-center">
-    <div class="w-full max-w-xl">
-      <h2 class="text-3xl text-blue-400 font-semibold mb-8" data-aos="fade-right">Get in touch</h2>
-    <form action="https://formsubmit.co/tomerlevy0404@gmail.com" method="POST" class="space-y-4" data-aos="fade-right" data-aos-delay="100">
-      <input type="text" name="name" placeholder="Your name" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required />
-      <input type="email" name="email" placeholder="example@gmail.com" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required />
-      <textarea name="message" rows="4" placeholder="Your Message here" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required></textarea>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://tomerl44.github.io/Portfolio/?success=true">
-    
-      <button type="submit" class="button-blue">Submit Message</button>
-    </form>
-    </div>
-  </section>
-</main>
+    <!-- About -->
+    <section id="about" class="min-h-screen flex items-center justify-center bg-black py-16 px-6">
+      <div class="max-w-6xl w-full border border-gray-800 rounded-2xl p-8" data-aos="fade-right">
+        <h2 class="text-4xl text-center text-blue-400 font-bold mb-12" data-aos="fade-right">Just a bit more:</h2>
+        <p class="text-center text-xl text-gray-300 mb-12" data-aos="fade-right" data-aos-delay="100">Discipline Fuels Innovation — that’s my motto.</p>
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- Skills -->
+          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-gray-800 rounded-xl p-6 glow-hover">
+            <h3 class="text-white font-semibold text-lg mb-2">Frontend:</h3>
+            <p class="flex flex-wrap gap-2">
+              <span class="badge bg-blue-900">JavaScript</span>
+              <span class="badge bg-blue-900">CSS</span>
+              <span class="badge bg-blue-900">HTML</span>
+            </p>
+            <h3 class="text-white font-semibold text-lg mt-6 mb-2">Backend:</h3>
+            <p class="flex flex-wrap gap-2">
+              <span class="badge bg-blue-900">Python</span>
+              <span class="badge bg-blue-900">C</span>
+            </p>
+            <h3 class="text-white font-semibold text-lg mt-6 mb-2">Other Tech:</h3>
+            <p class="flex flex-wrap gap-2">
+              <span class="badge bg-blue-900">VS Code</span>
+              <span class="badge bg-blue-900">Linux Terminal</span>
+            </p>
+          </div>
 
-<!-- Footer -->
-<footer id="footer" class="text-center text-blue-400 py-6 bg-black border-t border-gray-800">
-  <p>
-    📧 <a href="mailto:tomerlevy0404@gmail.com" class="text-blue-300 hover:underline">tomerlevy0404@gmail.com</a> |
-    <a href="https://linkedin.com/in/tomer-levy-10050a237" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:underline">LinkedIn</a> |
-    <a href="https://github.com/TomerL44" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:underline">GitHub</a>
-  </p>
-</footer>
+          <!-- Courses -->
+          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-gray-800 rounded-xl p-6 glow-hover">
+            <h3 class="text-white font-semibold text-lg mb-2">Completed Courses:</h3>
+            <p class="flex flex-wrap gap-2 mb-6">
+              <span class="badge bg-blue-900">Data Structures</span>
+              <span class="badge bg-blue-900">OOP</span>
+              <span class="badge bg-blue-900">Operating Systems</span>
+            </p>
+            <h3 class="text-white font-semibold text-lg mt-6 mb-2">Languages:</h3>
+            <p class="flex flex-wrap gap-2">
+              <span class="badge bg-blue-900">English (Fluent)</span>
+              <span class="badge bg-blue-900">Hebrew (Native)</span>
+            </p>
+          </div>
 
-<!-- Scripts -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="script.js"></script>
+          <!-- Education -->
+          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-gray-800 rounded-xl p-6 glow-hover">
+            <h3 class="text-white font-semibold text-lg mb-2">🎓 Education:</h3>
+            <ul class="list-disc list-inside text-gray-300 text-base leading-relaxed space-y-3">
+              <li><strong>Braude Academic College</strong> – B.Sc. Software Engineering (2023–2027)<br /><span class="pl-4 block">Experience in Python, C, JavaScript, HTML, CSS, Java</span></li>
+              <li><strong>Ort Nahariya High School</strong> – Computers and Electronics (2015–2018)<br /><span class="pl-4 block">Practical experience with hardware/software systems &amp; circuit design</span></li>
+            </ul>
+          </div>
+
+          <!-- Experience -->
+          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-gray-800 rounded-xl p-6 glow-hover">
+            <h3 class="text-white font-semibold text-lg mb-2">📂 Experience:</h3>
+            <div class="text-gray-300 text-base leading-relaxed space-y-2">
+              <p><strong>Computer Network Manager, IDF C4I Corps (2018–2021)</strong></p>
+              <p>Led a team managing military computer and network systems.</p>
+              <p>Completed army courses in Python, strengthening programming and automation capabilities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-black py-16 px-6 text-center">
+      <div class="w-full max-w-xl">
+        <h2 class="text-3xl text-blue-400 font-semibold mb-8" data-aos="fade-right">Get in touch</h2>
+        <form action="https://formsubmit.co/tomerlevy0404@gmail.com" method="POST" class="space-y-4" data-aos="fade-right" data-aos-delay="100">
+          <input type="text" name="name" placeholder="Your name" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required />
+          <input type="email" name="email" placeholder="example@gmail.com" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required />
+          <textarea name="message" rows="4" placeholder="Your Message here" class="w-full p-3 rounded bg-gray-800 border border-blue-500 text-white" required></textarea>
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://tomerl44.github.io/Portfolio/?success=true" />
+          <button type="submit" class="button-blue">Submit Message</button>
+        </form>
+        <div class="mt-8 flex justify-center gap-8 text-3xl text-blue-400">
+          <a
+            href="https://linkedin.com/in/tomer-levy-10050a237"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <i class="fab fa-linkedin transform transition-transform duration-300 hover:scale-110"></i>
+          </a>
+          <a
+            href="https://github.com/TomerL44"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            <i class="fab fa-github transform transition-transform duration-300 hover:scale-110"></i>
+          </a>
+        </div>                           
+      </div>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
