@@ -8,9 +8,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-slate-950 text-slate-200 font-sans flex flex-col min-h-screen">
+<body class="bg-blue-950 text-slate-200 font-sans flex flex-col min-h-screen">
 
-  <header class="sticky top-0 z-50 backdrop-blur bg-slate-950/70 w-full bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 py-6 px-10 flex flex-col md:flex-row justify-between items-center text-white border-b border-slate-800">
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-blue-950/80 w-full bg-gradient-to-r from-blue-950 via-slate-900 to-blue-950 py-6 px-10 flex flex-col md:flex-row justify-between items-center text-white border-b border-blue-900/50">
     <div class="text-left" data-aos="fade-right">
       <h1 class="text-4xl sm:text-5xl font-bold text-blue-400 cursor-pointer hover:scale-105 transition-transform duration-300" onclick="scrollToTop()">Tomer Levy</h1>
     </div>
@@ -23,7 +23,8 @@
   </header>
 
   <main class="flex-grow">
-    <section id="home" class="min-h-screen flex items-center justify-center text-center py-20 px-6 bg-gradient-to-b from-slate-950 to-slate-900">
+    
+    <section id="home" class="min-h-screen flex items-center justify-center text-center py-20 px-6 bg-gradient-to-br from-blue-950 via-indigo-950 to-slate-900">
       <div>
         <h1 class="text-5xl font-bold animated-gradient-text" data-aos="fade-right">Hi, I’m Tomer Levy</h1>
         <p class="mt-6 text-lg max-w-2xl mx-auto text-slate-300" data-aos="fade-right" data-aos-delay="200">
@@ -31,21 +32,21 @@
           I enjoy exploring both the technical and creative sides of software development — from writing code to bringing ideas to life.
           I’m currently looking for my first student position in software development, full-stack, or any related field.
         </p>
-        <img src="assets/Screenshot 2025-02-23 1045324534.png" alt="Tomer Profile" class="mt-8 w-40 h-40 rounded-full mx-auto object-cover border-4 border-blue-500" data-aos="zoom-in" data-aos-delay="300" />
+        <img src="assets/Screenshot 2025-02-23 1045324534.png" alt="Tomer Profile" class="mt-8 w-40 h-40 rounded-full mx-auto object-cover border-4 border-blue-500 shadow-lg shadow-blue-500/50" data-aos="zoom-in" data-aos-delay="300" />
         <div class="mt-6 flex justify-center gap-4 flex-wrap" data-aos="zoom-in" data-aos-delay="500">
-          <a href="assets/Tomer Levy CV.pdf" target="_blank" rel="noopener noreferrer" class="button-blue">📄 My Resume</a>
-          <a href="#contact" class="button-blue">📬 Contact me!</a>
+          <a href="assets/Tomer Levy CV.pdf" target="_blank" rel="noopener noreferrer" class="button-blue bg-slate-900/50 hover:bg-blue-600">📄 My Resume</a>
+          <a href="#contact" class="button-blue bg-slate-900/50 hover:bg-blue-600">📬 Contact me!</a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="min-h-screen flex items-center justify-center bg-slate-950 py-16 px-6">
-      <div class="max-w-6xl w-full border border-slate-800 rounded-2xl p-8" data-aos="fade-right">
+    <section id="about" class="min-h-screen flex items-center justify-center py-16 px-6 bg-gradient-to-bl from-slate-900 via-indigo-950 to-slate-900">
+      <div class="max-w-6xl w-full border border-indigo-500/30 bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 shadow-2xl" data-aos="fade-right">
         <h2 class="text-4xl text-center text-blue-400 font-bold mb-12" data-aos="fade-right">Just a bit more:</h2>
         <p class="text-center text-xl text-slate-300 mb-12" data-aos="fade-right" data-aos-delay="100">Discipline Fuels Innovation — that’s my motto.</p>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-slate-800 rounded-xl p-6 glow-hover">
+          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-indigo-500/30 bg-slate-950/40 rounded-xl p-6 glow-hover">
             <h3 class="text-white font-semibold text-lg mb-2">Frontend:</h3>
             <p class="flex flex-wrap gap-2">
               <span class="badge bg-blue-900">JavaScript</span>
@@ -64,7 +65,7 @@
             </p>
           </div>
 
-          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-slate-800 rounded-xl p-6 glow-hover">
+          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-indigo-500/30 bg-slate-950/40 rounded-xl p-6 glow-hover">
             <h3 class="text-white font-semibold text-lg mb-2">Completed Courses:</h3>
             <p class="flex flex-wrap gap-2 mb-6">
               <span class="badge bg-blue-900">Data Structures</span>
@@ -78,7 +79,7 @@
             </p>
           </div>
 
-          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-slate-800 rounded-xl p-6 glow-hover">
+          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-indigo-500/30 bg-slate-950/40 rounded-xl p-6 glow-hover">
             <h3 class="text-white font-semibold text-lg mb-2">🎓 Education:</h3>
             <ul class="list-disc list-inside text-slate-300 text-base leading-relaxed space-y-3">
               <li><strong>Braude Academic College</strong> – B.Sc. Software Engineering (2023–2027)<br /><span class="pl-4 block">Experience in Python, C, JavaScript, HTML, CSS, Java</span></li>
@@ -86,7 +87,7 @@
             </ul>
           </div>
 
-          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-slate-800 rounded-xl p-6 glow-hover">
+          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-indigo-500/30 bg-slate-950/40 rounded-xl p-6 glow-hover">
             <h3 class="text-white font-semibold text-lg mb-2">📂 Experience:</h3>
             <div class="text-slate-300 text-base leading-relaxed space-y-2">
               <p><strong>Computer Network Manager, IDF C4I Corps (2018–2021)</strong></p>
@@ -98,12 +99,12 @@
       </div>
     </section>
 
-    <section id="projects" class="min-h-screen flex items-center justify-center bg-slate-900 py-16 px-6">
-      <div class="max-w-6xl w-full border border-slate-800 rounded-2xl p-8" data-aos="fade-right">
+    <section id="projects" class="min-h-screen flex items-center justify-center py-16 px-6 bg-gradient-to-tr from-slate-900 via-cyan-950 to-slate-900">
+      <div class="max-w-6xl w-full border border-cyan-500/30 bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8" data-aos="fade-right">
         <h2 class="text-4xl text-center text-blue-400 font-bold mb-12" data-aos="fade-right">Projects</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-slate-800 rounded-xl p-6 glow-hover flex flex-col h-full">
+          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-cyan-500/30 bg-slate-950/40 rounded-xl p-6 glow-hover flex flex-col h-full">
             <h3 class="text-white font-semibold text-lg mb-2">MineSweeper Game</h3>
             <p class="text-slate-300 mb-4 text-sm flex-grow">
               Developed a fully functional MineSweeper game in Java using JavaFX and FXML. Practiced OOP principles, event handling, and GUI development.
@@ -115,7 +116,7 @@
             </div>
           </div>
 
-          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-slate-800 rounded-xl p-6 glow-hover flex flex-col h-full">
+          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-cyan-500/30 bg-slate-950/40 rounded-xl p-6 glow-hover flex flex-col h-full">
             <h3 class="text-white font-semibold text-lg mb-2">Bicycle Shop</h3>
             <p class="text-slate-300 mb-4 text-sm flex-grow">
               Developed a functional mini system using HTML/CSS/JS. Gained hands-on experience in frontend teamwork, version control, and scripting logic.
@@ -127,7 +128,7 @@
             </div>
           </div>
 
-          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-slate-800 rounded-xl p-6 glow-hover flex flex-col h-full">
+          <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-xl border border-cyan-500/30 bg-slate-950/40 rounded-xl p-6 glow-hover flex flex-col h-full">
             <h3 class="text-white font-semibold text-lg mb-2">Personal Web Portfolio</h3>
             <p class="text-slate-300 mb-4 text-sm flex-grow">
               Created and deployed a personal portfolio website to showcase projects and skills. Built with modern web technologies and hosted via GitHub Pages.
@@ -142,16 +143,16 @@
       </div>
     </section>
 
-    <section id="contact" class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-slate-900 to-slate-950 py-16 px-6 text-center">
+    <section id="contact" class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-t from-blue-950 via-slate-900 to-slate-900 py-16 px-6 text-center">
       <div class="w-full max-w-xl">
         <h2 class="text-3xl text-blue-400 font-semibold mb-8" data-aos="fade-right">Get in touch</h2>
         <form action="https://formsubmit.co/tomerlevy0404@gmail.com" method="POST" class="space-y-4" data-aos="fade-right" data-aos-delay="100">
-          <input type="text" name="name" placeholder="Your name" class="w-full p-3 rounded bg-slate-800 border border-blue-500 text-white placeholder-slate-400" required />
-          <input type="email" name="email" placeholder="example@gmail.com" class="w-full p-3 rounded bg-slate-800 border border-blue-500 text-white placeholder-slate-400" required />
-          <textarea name="message" rows="4" placeholder="Your Message here" class="w-full p-3 rounded bg-slate-800 border border-blue-500 text-white placeholder-slate-400" required></textarea>
+          <input type="text" name="name" placeholder="Your name" class="w-full p-3 rounded bg-slate-800/80 border border-blue-500 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          <input type="email" name="email" placeholder="example@gmail.com" class="w-full p-3 rounded bg-slate-800/80 border border-blue-500 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          <textarea name="message" rows="4" placeholder="Your Message here" class="w-full p-3 rounded bg-slate-800/80 border border-blue-500 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_next" value="https://tomerl44.github.io/Portfolio/?success=true" />
-          <button type="submit" class="button-blue">Submit Message</button>
+          <button type="submit" class="button-blue w-full font-bold text-lg hover:shadow-blue-500/50 hover:shadow-lg">Submit Message</button>
         </form>
         <div class="mt-8 flex justify-center gap-8 text-3xl text-blue-400">
           <a
