@@ -190,7 +190,7 @@ export const timelineEntries: TimelineEntry[] = [
   {
     year: "2024 — 2028 (Expected)",
     title: "B.Sc. in Software Engineering",
-    subtitle: "Braude Academic College • Current GPA: 84",
+    subtitle: "Braude Academic College",
     description:
       "Relevant coursework: Object-Oriented Programming, Data Structures, Databases (SQL, MySQL, SQLite schema design & CRUD), Operating Systems, Algorithms.",
     type: "education",
@@ -218,7 +218,7 @@ export const timelineEntries: TimelineEntry[] = [
 
 export const metrics = [
   { label: "Core Projects", value: 5, suffix: "" },
-  { label: "Academic GPA", value: 84, suffix: "" },
+  { label: "Academic Year", value: 3, suffix: "rd" },
   { label: "Years Tech Service", value: 3, suffix: "" },
   { label: "Languages & Tools", value: 15, suffix: "+" },
 ];
@@ -246,7 +246,7 @@ export const terminalCommands: Record<string, string> = {
 
   about: `
   Hey! I'm Tomer Levy — a Software Engineering student at Braude Academic
-  College (GPA 84) with solid backend and system-oriented foundations.
+  College with solid backend and system-oriented foundations.
   Experienced in C++, Java, and Python development, client-server
   architectures, and databases. Former Computer Networks Manager in C4I Corps.
   Seeking a Software / Backend Engineer Student role.`,
